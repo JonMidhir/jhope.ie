@@ -1,0 +1,136 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+
+body {
+	font-family: 'Merriweather', serif;
+  background: white;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #56e;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 580px;
+  padding: 60px 0px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 90%;
+    padding: 60px 0;
+  }
+}
+
+main > h1 {
+  margin-top: 0;
+}
+
+section {
+  margin-top: 48px;
+}
+
+sup {
+  font-size: 0.6em;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table tr {
+  padding: 0;
+  margin: 0;
+}
+
+table tr td {
+  padding: 8px 4px;
+  margin: 0;
+  vertical-align: top;
+}
+
+table tr > td { 
+  min-width: 100px;
+  padding-right: 12px;
+}
+
+@media (max-width: 640px) {
+  table tr > td { 
+    min-width: inherit;
+    padding-right: 12px;
+  }
+
+  table tr > td .hidden-sm {
+    display: none;
+  }
+}
+
+table tr td h4, table tr td h5 {
+  margin: 0 0 4px 0;
+}
+
+table tr td h5 {font-weight: normal;}
+
+ul {
+  padding-left: 16px;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+footer {
+  border-top: 1px #e2e2e2 solid;
+  font-size: 0.8em;
+  color: #888;
+  width: 580px;
+  padding: 30px 0px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  footer {
+    width: 90%;
+    padding: 45px 0;
+    font-size: 0.7em;
+  }
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer a:hover {
+  color: #888;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+footer li:before {
+    display: block;
+    float: left;
+    width: 20px;
+    color: #888;
+}
+
+footer li.first:before {
+  content: "[1]";
+}
+
+footer li.second:before {
+  content: "[2]";
+}
