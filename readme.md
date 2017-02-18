@@ -8,10 +8,8 @@ My website, hosted on Amazon S3.
 
 - Push changes to Github.
 
-- Mount the bucket using `s3fs`:
+- Copy the files to S3 using the aws command line client:
 
 ```
-    s3fs www.jhope.ie s3 -o passwd_file=./passwd
+  aws s3 sync . s3://www.jhope.ie
 ```
-
-- Copy files to the bucket.
