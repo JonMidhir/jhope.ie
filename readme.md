@@ -1,4 +1,4 @@
-# jhope.ie
+# jhope.ie
 
 My website, hosted on Amazon S3.
 
