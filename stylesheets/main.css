@@ -80,35 +80,11 @@ sup {
   margin: 0;
 }
 
-.rows h3 {
-  font-size: 1rem;
-  margin: 0 0 4px 0;
-}
-
-.rows .where {
-  margin: 0 0 4px 0;
-}
-
-.rows p {
-  margin: 0 0 4px 0;
-}
-
-/* Writing & citations */
-.refs a,
-.refs .title {
-  font-weight: 700;
-}
-
-.refs .meta {
-  color: var(--muted);
-}
-
 ul {
   padding-left: 16px;
 }
 
-ul li,
-.refs li {
+ul li {
   margin: 8px 0;
 }
 
@@ -124,8 +100,19 @@ footer a {
   text-decoration: underline;
 }
 
-@media (max-width: 640px) {
-  .hidden-sm {
-    display: none;
+/* Narrow screens: stack the label/value rows instead of squeezing two columns */
+@media (max-width: 480px) {
+  .rows {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .rows dt {
+    font-weight: 700;
+    margin-top: 12px;
+  }
+
+  .rows dt:first-child {
+    margin-top: 0;
   }
 }
